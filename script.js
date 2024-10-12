@@ -4,7 +4,7 @@ const value = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
     let choice = value[Math.floor(Math.random() * value.length)]
-    return console.log(choice)
+    return console.log(choice) 
 }
 
 function getHumanChoice() {
@@ -14,5 +14,4 @@ function getHumanChoice() {
     } else {getHumanChoice()}
 }
 
-
-getComputerChoice()
+let humanScore = 0, computerScore = 0
