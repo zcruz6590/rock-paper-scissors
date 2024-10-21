@@ -10,12 +10,7 @@ function getComputerChoice() {
     return choice
 }
 
-function getHumanChoice() {
-    let choice = prompt('Rock, Paper, Scissors:')
-    if (value.includes(choice.toLowerCase())) {
-        return choice.toLowerCase()
-    } else {getHumanChoice()}
-}
+
 
 function playGame() {
     let humanScore = 0, computerScore = 0
