@@ -20,11 +20,10 @@ function getHumanChoice() {
 function playGame() {
     let humanScore = 0, computerScore = 0
 
-    for(let round = 1; round <= 5; round++) {
-        const human = getHumanChoice();
-        const computer = getComputerChoice();
-        playRound(human, computer)
-        
+    while(humanScore < 5 && computerScore < 5) {
+
+    }
+       
         function playRound(human, computer) {
             console.log('You chose ' + human + ' and computer chose ' + computer)
             if (human == computer) {
@@ -39,7 +38,7 @@ function playGame() {
                 console.log('You Lose!')
             } 
         }
-    }
+    
     console.log("Score:\nYou: " + humanScore + "\nComputer: " + computerScore)
 }
 
